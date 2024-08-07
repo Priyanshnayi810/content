@@ -1,0 +1,276 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Content Garrage.com - Free Project Management Platform for remote teams">
+    <title>Content Garrage.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+      <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><img class="w-100" src="{% static 'img/icon/im.png' %}" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link  active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>         
+            </ul>
+            <ul class="right navbar-nav ms-auto">
+              <li class="nav-item-right">
+                <a class="nav-link-right" href="#">Login / Sign Up</a>
+              </li>
+              <li class="nav-item-right">
+                <a class="nav-link-right btn-fill" href="#">Start Today</a>
+              </li>       
+            </ul>
+          </div>
+        </div>
+      </nav>
+  {% block content %}
+      <main>
+        <!-- Intro -->
+        <div class="container">
+          <div class="intro pb-5">
+            <div class="intro-text">
+              {% comment %} <h1 class="intro-h1">Lorem Ipsum is not simply random text</h1> {% endcomment %}
+              <h1 class="intro-h1">At Content Garrage,we create content</h1>
+              {% comment %} <p class="front-page">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> {% endcomment %}
+              <p class="front-page">We might show up during your search for content writing companies in Mumbai, the best content creation agency,or even SEO content writing services.If we do not, no worries.You still got here!</p>
+              <div class="buttons">
+              <a href="" class="btn-fill">Read More</a>
+              <a href="" class="btn-outline">Start Today</a>
+              </div>
+            </div>
+            <div class="intro-img">
+                <img src="{% static 'img/header-img.png' %}" alt="">
+            </div>
+            <div class="scroll">
+              <a href="#variation"><img src="{% static 'img/icon/icon-scroll-down.svg' %}" alt=""><span class="text-muted">Scroll down</span></a>
+            </div>
+          </div>
+          <!-- Clients -->
+          <div class="clients text-center">
+            <p class="text-muted text-uppercase pb-4">Some of our trusted clients</p>
+            <div class="client-logo">
+              <div><img src="{% static 'img/icon/go-sm-logo.svg' %}" alt=""></div>
+              <div><img src="{% static 'img/icon/social-road-logo.svg' %}" alt=""></div>
+              <div><img src="{% static 'img/icon/firmbee-logo.svg' %}" alt=""></div>
+              <div><img src="{% static 'img/icon/create-paper.svg' %}" alt=""></div>
+              <div><img src="{% static 'img/icon/point-design-logo.svg' %}" alt=""></div>
+            </div>
+          </div>
+          <!-- Variations -->
+          <div id="variations" class="variations">
+            <div class="first-variation">
+              <div class="img">
+                <img src="{% static 'img/man.png' %}" alt="">
+              </div>
+              <div class="text">
+                {% comment %} <h1 class="variations-h1">There are many variations of passages of Lorem Ipsum available</h1> {% endcomment %}
+                <h1 class="variations-h1">We are The Storytellers!</h1>
+                {% comment %} <p class="front-page">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p> {% endcomment %}
+                <p class="front-page">As writers, proofreaders and editors, we equip linguistic capabilities and the fundamentals of communication engineering to craft your tale.</p>
+                <div class="buttons">
+                  <a href="" class="btn-fill">Read More</a>
+                <a href="" class="btn-outline">Start Today</a>
+                </div>
+              </div>
+            </div>
+            <div class="second-variation">
+              <div class="text">
+                {% comment %} <h1 class="variations-h1">There are many variations of passages of Lorem Ipsum available</h1> {% endcomment %}
+                <h1 class="variations-h1">The content you need is the content you get.</h1>
+                {% comment %} <p class="front-page">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p> {% endcomment %}
+                <p class="front-page">If you are looking for someone to write your personal or brand story in the most authentic way possible, you are exactly where you were meant to be. At Content Garrage, we meticulously blend words and ideas to evoke a powerful brand voice. We create riveting content through research, writing techniques, and likability to ensure that the content you need is the content you get.</p>
+                <div class="buttons">
+                  <a href="" class="btn-fill">Read More</a>
+                  <a href="" class="btn-outline">Start Today</a>
+                </div>
+              </div>
+              <div class="img">
+                <img src="{% static 'img/woman.png' %}" alt="">
+                <img class = "square" src="{% static 'img/icon/square.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Service -->
+          <div class="service">
+            <h1>Top Notch Service</h1>
+            <p class="front-page">“I like cooking my family and my pet. ~ Content Garbage” If you can’t sea everything that’s wong with the content here, you need us! (and our services)</p>
+            <div class="service-items">
+              {% comment %} <div class="item">
+                <img src="{% static 'img/icon/code-icon.svg' %}" alt="">
+                <span class="counter">7 453 664</span>
+                <span>Kilometers <br>of code written</span>
+              </div> {% endcomment %}
+              <div class="item">
+                <img src="{% static 'img/icon/book.svg' %}" alt="">
+                <span class="counter">Blogs & Articles</span>
+                <span>The essential 500 words, <br>often ignored</span>
+              </div>
+              {% comment %} <div class="item">
+                <img src="{% static 'img/icon/cofee-icon.svg' %}" alt="">
+                <span class="counter">43 657</span>
+                <span>Coffees<br>drunk</span>
+              </div> {% endcomment %}
+              <div class="item">
+                <img src="{% static 'img/icon/pc.svg' %}" alt="">
+                <span class="counter">Book Writing</span>
+                <span>100 or more pages of pure<br>storytelling</span>
+              </div>
+              {% comment %} <div class="item">
+                <img src="{% static 'img/icon/satisfied-client-icon.svg' %}" alt="">
+                <span class="counter">1 764</span>
+                <span>Satisfied<br>customers</span>
+              </div> {% endcomment %}
+              <div class="item">
+                <img src="{% static 'img/icon/media.svg' %}" alt="">
+                <span class="counter">Social Media</span>
+                <span>Rich the Boomers<br>Millenials and Gen-Z</span>
+              </div> 
+              {% comment %} <div class="item">
+                <img src="{% static 'img/icon/realized-projects-icon.svg' %}" alt="">
+                <span class="counter">36 874</span>
+                <span>Realized<br>projects</span>
+              </div> {% endcomment %}
+              <div class="item">
+                <img src="{% static 'img/icon/search.png' %}" alt="">
+                <span class="counter">Website Content</span>
+                <span>Saves you from an identity<br>crisis</span>
+              </div>
+              <div class="item">
+                <img src="{% static 'img/icon/seo.png' %}" alt="">
+                <span class="counter">SEO Content</span>
+                <span>Spruce up your internal<br>and external comms</span>
+              </div>
+            </div>
+          </div>
+          <!-- Newsletter -->
+          <div class="update-news">
+            <div class="row">
+              <div class="col-md-5 news-text">
+                <h2>Get your enquiries & services</h2>
+                <p>Content Garrage is one of the most popular content writing firms in Mumbai. Send in your enquiries for blog writing services and article writing services today.</p>
+              </div>
+              <div class="col-md-7 news-form">
+                <input type="email" name="email" placeholder="Enter your email" id="">
+                <button type="submit">Send</button>
+              </div>
+            </div>
+            </div>
+            <!-- Team -->
+          <div class="team text-center">
+            <h1>Our Team</h1>
+            <p class="front-page">These guys founded Content Garrage over coffee and a Game of Thrones binge.</p>
+            <div class="team-person">
+              <div class="person">
+                <div class="photo"><img src="{% static 'img/team-1.png' %}" alt=""></div>
+                <span class="name">John Fox</span>
+                <span>Chief Creative Officer</span>
+              </div>
+              <div class="person">
+                <div class="photo"><img src="{% static 'img/team-2.png' %}" alt=""></div>
+                <span class="name">Kate Rose</span>
+                <span>Advisor</span>
+              </div>
+              <div class="person">
+                <div class="photo"><img src="{% static 'img/team-3.png' %}" alt=""></div>
+                <span class="name">Anna Brown</span>
+                <span> Chief Advisor</span>
+              </div>
+              <div class="person">
+                <div class="photo"><img src="{% static 'img/team-4.png' %}" alt=""></div>
+                <span class="name">Mike Doe</span>
+                <span>Founder Ceo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      {% endblock %}
+      <!-- Footer -->
+      <footer>
+          <div class="container text-center text-md-start py-5">
+            <div class="footer-wrap">
+              <div class="about">
+                <img src="{% static 'img/icon/im.png' %}" alt="">
+                <p class="text-muted py-4">
+                  Content Garrage is one of the most popular content writing firms in Mumbai. Send in your enquiries for blog writing services and article writing services today.
+                </p>
+                <div class="social-media">
+                  <a href="" class="me-2 text-reset"><img src="./img/icon/social-media-01.svg" alt=""></a>
+                  <a href="" class="me-2 text-reset"><img src="./img/icon/social-media-02.svg" alt=""></a>
+                  <a href="" class="me-2 text-reset"><img src="./img/icon/social-media-03.svg" alt=""></a>
+                  <a href="" class="me-2 text-reset"><img src="./img/icon/social-media-04.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="company">
+                <h6 class="fw-bold">Company</h6>
+                <p><a href="">About us</a></p>
+                <p><a href="">Services</a></p>
+                <p><a href="">Team</a></p>
+                <p><a href="">Pricing</a></p>
+                <p><a href="">Project</a></p>
+                <p><a href="">Careers</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Login</a></p>
+              </div>
+              <div class="useful-links">
+                <h6 class="fw-bold">Useful links</h6>
+                <p><a href="">Terms of </a></p>
+                <p><a href="">Services</a></p>
+                <p><a href="">Privacy Policy</a></p>
+                <p><a href="">Documentation</a></p>
+                <p><a href="">Changelog</a></p>
+                <p><a href="">Components</a></p>
+              </div>
+              <div class="newsletter">
+                <h6 class="fw-bold">Details</h6>
+                <p class="text-muted">&#9993; business@contentgarrage.com</p>
+                <h6 class="fw-bold">Contact</h6>
+                <p class="text-muted">&#9742; +91 9833166186</p>
+                <h6 class="fw-bold">Location</h6>
+                <p class="text-muted">&#9906; Mumbai,Malad West</p>
+                  <form id="subscribe" action="">
+                    <label for="email">Youre e-mail:</label>
+                    <input type="email" placeholder="e-mail:" name="email" required>
+                    <button type="submit" class="btn-fill">Subscribe</button>
+                  </form>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>&copy; Copyright 2024 . Concept by  Content Garrage.<a href="https://firmbee.com/solutions/free-invoicing-app-billing-software/" title="Firmbee - Free Invoicing App" target="_blank"></a></p>
+              <!--
+              This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
+              You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+              --> 
+            </div>
+          </div>
+      </footer>
+    <div class="fb2022-copy">Fbee 2022 copyright</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
